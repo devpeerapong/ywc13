@@ -1,0 +1,18 @@
+// injector
+// endinjector
+
+$fa-font-path: '/assets/libs/font-awesome/fonts';
+$border-radius-base: 0px;
+
+@import "../libs/font-awesome/scss/font-awesome";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+}
+
+.jumbotron {
+	background-color: #fff !important;
+	border: 1px solid #E1E2E4;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}

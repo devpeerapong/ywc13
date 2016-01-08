@@ -1,0 +1,66 @@
+<html ng-app="mean">
+	<head>
+		<title>MEAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- bower:css -->
+  		<link rel="stylesheet" href="/assets/libs/angular-toastr/dist/angular-toastr.css">
+  		<link rel="stylesheet" href="/assets/libs/angular-loading-bar/build/loading-bar.css">
+  		<link rel="stylesheet" href="/assets/libs/ui-select/dist/select.css">
+  		<!-- endinject -->
+
+      <base href="/"></base>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- endinject -->
+	</head>
+	<body>
+		
+    <section ui-view></section>
+
+		<!-- bower:js -->
+  		<script src="/assets/libs/angular/angular.js"></script>
+  		<script src="/assets/libs/angular-mocks/angular-mocks.js"></script>
+  		<script src="/assets/libs/angular-sanitize/angular-sanitize.js"></script>
+  		<script src="/assets/libs/angular-animate/angular-animate.js"></script>
+  		<script src="/assets/libs/angular-scroll/angular-scroll.js"></script>
+  		<script src="/assets/libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  		<script src="/assets/libs/angular-jwt/dist/angular-jwt.js"></script>
+  		<script src="/assets/libs/a0-angular-storage/dist/angular-storage.js"></script>
+  		<script src="/assets/libs/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  		<script src="/assets/libs/angular-messages/angular-messages.js"></script>
+  		<script src="/assets/libs/angular-loading-bar/build/loading-bar.js"></script>
+  		<script src="/assets/libs/ui-select/dist/select.js"></script>
+  		<script src="/assets/libs/angular-ui-router/release/angular-ui-router.js"></script>
+  		<!-- endinject -->
+    
+    <!-- inject:js -->
+    <script src="/app/app.module.js"></script>
+    <script src="/app/articles/articles.module.js"></script>
+    <script src="/app/core/core.module.js"></script>
+    <script src="/app/nursery/nursery.module.js"></script>
+    <script src="/app/users/users.module.js"></script>
+    <script src="/app/articles/config/articles.routes.js"></script>
+    <script src="/app/core/config/core.config.js"></script>
+    <script src="/app/core/config/core.routes.js"></script>
+    <script src="/app/core/config/core.run.js"></script>
+    <script src="/app/users/config/users.routes.js"></script>
+    <script src="/app/users/config/users.run.js"></script>
+    <script src="/app/articles/services/articles.factory.js"></script>
+    <script src="/app/nursery/services/nursery.model.js"></script>
+    <script src="/app/users/services/auth.factory.js"></script>
+    <script src="/app/users/services/user.model.js"></script>
+    <script src="/app/users/services/user.service.js"></script>
+    <script src="/app/articles/controllers/article.controller.js"></script>
+    <script src="/app/articles/controllers/articles.controller.js"></script>
+    <script src="/app/articles/controllers/create-article.controller.js"></script>
+    <script src="/app/articles/controllers/delete-article.controller.js"></script>
+    <script src="/app/articles/controllers/edit-article.controller.js"></script>
+    <script src="/app/users/controllers/register.controller.js"></script>
+    <script src="/app/users/controllers/signin.controller.js"></script>
+    <script src="/app/core/controllers/main.controller.js"></script>
+    <script src="/app/users/directives/unique.directive.js"></script>
+    <script src="/app/users/directives/validate-on.directive.js"></script>
+    <script src="/app/core/directives/navbar/navbar.directive.js"></script>
+    <!-- endinject -->
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<div class="container">
+	<h1 class="page-header">
+		Articles
+		<button type="button" ng-if="NavbarCTRL.user()" class="btn btn-default" ui-sref="main.create-article"><i class="fa fa-plus"></i></button>
+	</h1>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<uib-alert type="warning" class="text-center" ng-if="ArticlesCTRL.articles.length === 0">There is no articles now. <a ui-sref="main.create-article" ng-if="NavbarCTRL.user()">why don't you create one?</a></uib-alert>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="article in ArticlesCTRL.articles | orderBy: '-createdAt' track by $index">
+					<div class="row">
+						<div class="col-md-11">
+							<h4><a ui-sref="main.article( { id: '{{ article._id }}' })">{{ article.title }}</a></h4>
+							<p>{{ article.content | limitTo: 60 }}</p>
+							<hr />
+							<small>by {{ article.author.username }} on {{ article.createdAt | date: "EEEE, dd MMMM yyyy 'at' HH:mm" }}</small>
+						</div>
+						<div class="col-md-1">
+							<div class="btn-group-vertical" ng-if="NavbarCTRL.user().username === article.author.username" role="group">
+								<button ui-sref="main.edit-article( { id: '{{ article._id }}' })" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+								<button ng-click="ArticlesCTRL.confirmDelete(article)" type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

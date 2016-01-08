@@ -1,0 +1,41 @@
+.input-addon-group {
+	position: relative;
+
+	& .fa {
+		@extend .form-control-feedback;
+		line-height: 34px;
+	}
+
+	& .input-addon:first-child {
+		position: absolute;
+
+		width: 32px;
+		height: 34px;
+
+		text-align: center;
+	}
+
+	& .input-addon:last-child {
+		position: absolute;
+
+		top: 0px;
+		right: 0px;
+		width: 32px;
+
+		height: 34px;
+		text-align: center;
+	}
+
+	& .form-control:first-child {
+		padding-right: 30px;
+	}
+
+	& .form-control:nth-child(2) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	& .form-control:last-child {
+		padding-left: 30px;
+	}
+}
