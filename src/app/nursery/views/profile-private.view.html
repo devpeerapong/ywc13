@@ -27,18 +27,37 @@
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body text-center">
-                    <h4>รายละเอียดการจ้างงาน</h4>
-                    <h4>บลา ๆ บลา ๆ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vero, voluptatem placeat, ipsum itaque illo molestiae eveniet aliquid dolorum tenetur, officia sapiente alias ab atque? Error quae, sit non aspernatur.</h4>
-                    <div class="text-right">
-                        <button type="button" class="btn btn-default">ยืนยัน</button>
-                        <button type="button" class="btn btn-default">ยกเลิก</button>
+                    <h4>รายการ</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p align="left">เพศ: </p>
+                            <p align="left">วันที่: &nbsp;xx&nbsp; ถึง วันที่: &nbsp;xx&nbsp; </p>
+                            <p align="left">เขต:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p align="left">สถานะ: </p>
+                            <p align="left">ระยะเวลา:</p>
+                        </div>
+                        <div class="text-right">
+                            <br>
+                            <button type="button" class="btn btn-default">ยืนยัน</button>
+                            <button type="button" class="btn btn-default">ยกเลิก</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default" ng-repeat="a in [1,2,3,4,5,6,7]">
                 <div class="panel-body text-center text-muted">
                     <p>รายละเอียดการจ้างงาน เก่า ๆ</p>
-                    <p>บลา ๆ บลา ๆ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vero, voluptatem placeat, ipsum itaque illo molestiae eveniet aliquid dolorum tenetur, officia sapiente alias ab atque? Error quae, sit non aspernatur.</p>
+                    <div class="col-md-6">
+                        <p align="left">เพศ: </p>
+                        <p align="left">วันที่: &nbsp;xx&nbsp; ถึง วันที่: &nbsp;xx&nbsp; </p>
+                        <p align="left">Rating:</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p align="left">สถานะ: </p>
+                        <p align="left">ระยะเวลา:</p>
+                    </div>
                 </div>
             </div>
         </div>
