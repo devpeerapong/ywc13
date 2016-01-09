@@ -1,0 +1,6 @@
+<ui-select ng-model="DistrictSelectCtrl.model" theme="selectize">
+    <ui-select-match placeholder="Select district...">{{$select.selected}}</ui-select-match>
+    <ui-select-choices repeat="d in DistrictSelectCtrl.districts | filter: $select.search">
+        <span ng-bind-html="d | highlight: $select.search"></span>
+    </ui-select-choices>
+</ui-select>

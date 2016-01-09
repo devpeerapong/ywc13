@@ -1,6 +1,7 @@
 <html ng-app="mean">
 	<head>
 		<title>MEAN</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<!-- bower:css -->
   		<link rel="stylesheet" href="/assets/libs/angular-toastr/dist/angular-toastr.css">
@@ -30,6 +31,7 @@
   		<script src="/assets/libs/angular-messages/angular-messages.js"></script>
   		<script src="/assets/libs/angular-loading-bar/build/loading-bar.js"></script>
   		<script src="/assets/libs/ui-select/dist/select.js"></script>
+  		<script src="/assets/libs/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
   		<script src="/assets/libs/angular-ui-router/release/angular-ui-router.js"></script>
   		<!-- endinject -->
     
@@ -37,16 +39,18 @@
     <script src="/app/app.module.js"></script>
     <script src="/app/articles/articles.module.js"></script>
     <script src="/app/core/core.module.js"></script>
-    <script src="/app/nursery/nursery.module.js"></script>
     <script src="/app/users/users.module.js"></script>
-    <script src="/app/articles/config/articles.routes.js"></script>
+    <script src="/app/nursery/nursery.module.js"></script>
     <script src="/app/core/config/core.config.js"></script>
     <script src="/app/core/config/core.routes.js"></script>
     <script src="/app/core/config/core.run.js"></script>
+    <script src="/app/articles/config/articles.routes.js"></script>
+    <script src="/app/nursery/config/nursery.routes.js"></script>
     <script src="/app/users/config/users.routes.js"></script>
     <script src="/app/users/config/users.run.js"></script>
     <script src="/app/articles/services/articles.factory.js"></script>
     <script src="/app/nursery/services/nursery.model.js"></script>
+    <script src="/app/nursery/services/nursery.service.js"></script>
     <script src="/app/users/services/auth.factory.js"></script>
     <script src="/app/users/services/user.model.js"></script>
     <script src="/app/users/services/user.service.js"></script>
@@ -55,11 +59,13 @@
     <script src="/app/articles/controllers/create-article.controller.js"></script>
     <script src="/app/articles/controllers/delete-article.controller.js"></script>
     <script src="/app/articles/controllers/edit-article.controller.js"></script>
+    <script src="/app/core/controllers/main.controller.js"></script>
     <script src="/app/users/controllers/register.controller.js"></script>
     <script src="/app/users/controllers/signin.controller.js"></script>
-    <script src="/app/core/controllers/main.controller.js"></script>
     <script src="/app/users/directives/unique.directive.js"></script>
     <script src="/app/users/directives/validate-on.directive.js"></script>
+    <script src="/app/core/directives/datetimepicker/datetimepicker.directive.js"></script>
+    <script src="/app/core/directives/ui-select-district/ui-select-district.directive.js"></script>
     <script src="/app/core/directives/navbar/navbar.directive.js"></script>
     <!-- endinject -->
 	</body>

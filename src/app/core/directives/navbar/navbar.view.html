@@ -17,6 +17,7 @@
 				<li ui-sref-active="active"><a ui-sref="main.articles">Articles</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li ui-sref-active="active"><a ui-sref="nursery.index">Nursery</a></li>
 				<li ng-if="!NavbarCTRL.user()" ui-sref-active="active"><a ui-sref="main.register">Register</a></li>
 				<li ng-if="!NavbarCTRL.user()" ui-sref-active="active"><a ui-sref="main.signin">Sign In</a></li>
 				<li uib-dropdown ng-if="NavbarCTRL.user()">

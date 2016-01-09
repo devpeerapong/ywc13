@@ -26,7 +26,7 @@ gulp.task('watch', ['inject'], function() {
 
     $.watch([conf.paths.base + '/index.html',
             conf.paths.app + '/**/views/*.view.html',
-            conf.paths.app + '/**/directives/*.view.html'
+            conf.paths.app + '/**/directives/**/*.view.html'
         ],
         function() {
             browserSync.reload();
